@@ -27,10 +27,10 @@ if grep  $output_text ~/.bashrc; then
   echo "already exist!"
   else echo "source "$output_text >> ~/.bashrc
 fi
-# For face_expression gtx_error
+
+# Set up display device pass
 output_text="DISPLAY=:0.0"
 if grep  $output_text ~/.bashrc; then
-  echo "already exist!"
   else echo "export "$output_text >> ~/.bashrc
 fi
 source ~/.bashrc
@@ -46,14 +46,7 @@ catkin_make
 # Write source command in .bashrc
 output_text="~/ros/devel/setup.bash"
 if grep  $output_text ~/.bashrc; then
-  echo "already exist!"
   else echo "source "$output_text >> ~/.bashrc
-fi
-source ~/.bashrc
-output_text="LIBGL_ALWAYS_SOFTWARE=1"
-if grep  $output_text ~/.bashrc; then
-  echo "already exist!"
-  else echo "export "$output_text >> ~/.bashrc
 fi
 source ~/.bashrc
 
