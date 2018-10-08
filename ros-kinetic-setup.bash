@@ -22,18 +22,12 @@ sudo rosdep init
 rosdep update
 
 # Write source command in .bashrc
-output_text="/opt/ros/kinetic/setup.bash"
-if grep  $output_text ~/.bashrc; then
-  echo "already exist!"
-  else echo "source "$output_text >> ~/.bashrc
+echo "Updating bashrc"
+source_pass="/opt/ros/kinetic/setup.bash"
+if grep  $source_pass ~/.bashrc; then
+  echo "already exist."
+  else echo "source "$source_pass >> ~/.bashrc
 fi
-
-# Set up display device pass
-output_text="DISPLAY=:0.0"
-if grep  $output_text ~/.bashrc; then
-  else echo "export "$output_text >> ~/.bashrc
-fi
-source ~/.bashrc
 
 echo "Install other packages for ROS."
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
@@ -44,9 +38,11 @@ cd ~/catkin_ws/
 catkin_make
 
 # Write source command in .bashrc
-output_text="~/ros/devel/setup.bash"
-if grep  $output_text ~/.bashrc; then
-  else echo "source "$output_text >> ~/.bashrc
+echo "Updating bashrc"
+source_pass="~/ros/devel/setup.bash"
+if grep  $source_pass ~/.bashrc; then
+  echo "already exist."
+  else echo "source "$source_pass >> ~/.bashrc
 fi
 source ~/.bashrc
 
