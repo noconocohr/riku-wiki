@@ -4,4 +4,4 @@ some tools for ubuntu.
 
 ## How to use
 
-See Wiki Page.
+See Wiki Page [here](https://github.com/noconocohr/shell-tools/wiki).
