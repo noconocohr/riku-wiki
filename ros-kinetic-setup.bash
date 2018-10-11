@@ -54,7 +54,8 @@ echo "Setting up ROSCONSOLE FORMAT"
 if grep "ROSCONSOLE_FORMAT" ~/.bashrc; then
   echo "ROSCONSOLE_FORMAT has already set up."
 else
-  echo "export ROSCONSOLE_FORMAT='[${severity}] ${message}'"
+  echo "export ROSCONSOLE_FORMAT='[${severity}] ${message}'" >> ~/.bashrc
 fi
 
+source ~/.bashrc
 echo "Finished!!"
