@@ -7,25 +7,25 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 sudo apt-get update
 sudo apt-get install code
 
-# Language Extentions
-code --install-extention truman.autocomplate-shell
-code --install-extention ms-python.python
-code --install-extention ms-vscode.cpptools
-code --install-extention twxs.cmake
-code --install-extention vector-of-bool.cmake-tools
-code --install-extention dotjoshjohnson.xml
+# Language extensions
+code --install-extension truman.autocomplate-shell
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension twxs.cmake
+code --install-extension vector-of-bool.cmake-tools
+code --install-extension dotjoshjohnson.xml
 
-# Install Extentions based on here(https://qiita.com/sensuikan1973/items/74cf5383c02dbcd82234)
-code --install-extention robertohuertasm.vscode-icons
-code --install-extention eamodio.gitlens
-code --install-extention donjayamanne.githistory
-code --install-extention coenraads.bracket-pair-colorizer
-code --install-extention ionutvmi.path-autocomplete
-code --install-extention mechatroner.rainbow-csv
-code --install-extention rogalmic.bash-debug
-code --install-extention shardulm94.trailing-spaces
+# Install extensions based on here(https://qiita.com/sensuikan1973/items/74cf5383c02dbcd82234)
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension eamodio.gitlens
+code --install-extension donjayamanne.githistory
+code --install-extension coenraads.bracket-pair-colorizer
+code --install-extension ionutvmi.path-autocomplete
+code --install-extension mechatroner.rainbow-csv
+code --install-extension rogalmic.bash-debug
+code --install-extension shardulm94.trailing-spaces
 
-# Extentions for ROS
-code --install-extention pijar.ros-snippets
-code --install-extention ajshort.ros
-code --install-extention ajshort.msg
+# extensions for ROS
+code --install-extension pijar.ros-snippets
+code --install-extension ajshort.ros
+code --install-extension ajshort.msg
