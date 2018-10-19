@@ -33,6 +33,7 @@ fi
 echo "Install other essential packages for ROS."
 sudo apt-get install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 
+source ~/.bashrc
 echo "Making catkin workspace"
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
