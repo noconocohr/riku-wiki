@@ -41,7 +41,7 @@ catkin_make
 
 # Write source command in .bashrc
 echo "Updating bashrc"
-source_pass="~/ros/devel/setup.bash"
+source_pass="~/catkin_ws/devel/setup.bash"
 if grep  $source_pass ~/.bashrc; then
   echo $source_pass "is already exist."
 else
@@ -55,7 +55,7 @@ echo "Setting up ROSCONSOLE FORMAT"
 if grep "ROSCONSOLE_FORMAT" ~/.bashrc; then
   echo "ROSCONSOLE_FORMAT has already set up."
 else
-  echo "export ROSCONSOLE_FORMAT='[${severity}] ${message}'" >> ~/.bashrc
+  echo "export ROSCONSOLE_FORMAT='[\${severity}] \${message}'" >> ~/.bashrc
 fi
 
 source ~/.bashrc
