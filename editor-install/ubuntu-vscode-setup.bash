@@ -24,6 +24,12 @@ code --install-extension ionutvmi.path-autocomplete
 code --install-extension mechatroner.rainbow-csv
 code --install-extension rogalmic.bash-debug
 code --install-extension shardulm94.trailing-spaces
+code --install-extension austin.code-gnu-global
+
+# Markdown
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension yzane.markdown-pdf
+code --install-extension bierner.markdown-preview-github-styles
 
 # extensions for ROS
 code --install-extension pijar.ros-snippets
